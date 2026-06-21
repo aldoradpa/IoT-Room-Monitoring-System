@@ -1,20 +1,18 @@
-# IoT Room Monitoring System
+# 🌡️ IoT Room Monitoring System
 
-## Overview
+IoT-based room monitoring system for temperature, humidity, and gas detection using ESP8266, DHT22, MQ135, Blynk, and Telegram notifications.
 
-IoT-based room monitoring system designed to monitor temperature, humidity, and gas concentration in real time. This project was developed using ESP8266, DHT22, MQ135, Blynk, and Telegram integration to help maintain ideal environmental conditions for storage areas.
+---
 
-## Features
+## 📖 Overview
 
-* Real-time temperature monitoring
-* Real-time humidity monitoring
-* Gas concentration monitoring
-* Automatic fan control based on environmental conditions
-* LCD display for local monitoring
-* Telegram notifications for abnormal conditions
-* Remote monitoring using Blynk
+This project was developed to monitor room environmental conditions in real time. The system measures temperature, humidity, and gas concentration using IoT technology and automatically provides alerts when unsafe conditions are detected.
 
-## Hardware Components
+The monitoring data can be viewed through an LCD display and Blynk dashboard, while Telegram notifications are sent automatically when abnormal conditions occur.
+
+---
+
+## 🛠 Hardware Components
 
 * NodeMCU ESP8266
 * DHT22 Temperature & Humidity Sensor
@@ -25,69 +23,147 @@ IoT-based room monitoring system designed to monitor temperature, humidity, and 
 * LED Indicator
 * Power Supply
 
-## Software & Tools
+---
+
+## 💻 Software & Tools
 
 * Arduino IDE
+* ESP8266 Board Package
 * Blynk IoT Platform
 * Telegram Bot API
-* ESP8266 Library
+* C++
 
-## System Workflow
+---
 
-1. ESP8266 initializes sensors and network connection.
-2. DHT22 reads temperature and humidity data.
-3. MQ135 reads gas concentration data.
-4. Sensor data is displayed on the LCD.
-5. Data is sent to Blynk for remote monitoring.
-6. The system evaluates environmental conditions.
+## ✨ Features
+
+* Real-time temperature monitoring
+* Real-time humidity monitoring
+* Real-time gas concentration monitoring
+* LCD display monitoring
+* Blynk dashboard integration
+* Telegram alert notifications
+* Automatic fan control
+* Environmental condition evaluation
+* IoT remote monitoring
+
+---
+
+## 📊 System Workflow
+
+1. ESP8266 initializes all sensors and modules.
+2. DHT22 reads temperature and humidity values.
+3. MQ135 reads gas concentration values.
+4. Data is displayed on LCD.
+5. Data is sent to the Blynk dashboard.
+6. System evaluates environmental conditions.
 7. Fans and indicators are controlled automatically.
-8. Telegram notifications are sent when abnormal conditions are detected.
-9. The monitoring process repeats continuously.
+8. Telegram alerts are sent when dangerous conditions are detected.
+9. Monitoring process runs continuously.
 
-## Project Structure
+---
+
+# 📂 Project Structure
 
 ```text
-Arduino/
-Diagram/
-Screenshot/
-README.md
+IoT-Room-Monitoring-System/
+│
+├── Arduino/
+│   └── iot_room_monitoring.ino
+│
+├── Diagram/
+│   ├── flowchart_sistem.png
+│   ├── block_diagram.png
+│   └── wiring_diagram.png
+│
+├── Screenshot/
+│   ├── dashboard_blynk.png
+│   ├── notifikasi_telegram.png
+│   ├── lcd_display.jpg
+│   └── prototype_alat.jpg
+│
+└── README.md
 ```
 
-## Diagrams
+---
 
-* Flowchart System
-* Block Diagram
-* Wiring Diagram
+# 🔄 Flowchart System
 
-## Screenshots
+![Flowchart](Diagram/flowchart_sistem.png)
 
-### Dashboard Monitoring
+---
 
-(Add dashboard image here)
+# 🧩 Block Diagram
 
-### Telegram Notifications
+![Block Diagram](Diagram/block_diagram.png)
 
-(Add notification image here)
+---
 
-### LCD Display
+# 🔌 Wiring Diagram
 
-(Add LCD image here)
+![Wiring Diagram](Diagram/wiring_diagram.png)
 
-### Prototype Device
+---
 
-(Add prototype image here)
+# 📱 Dashboard Monitoring
 
-## Technologies
+![Dashboard](Screenshot/dashboard_blynk.png)
 
-* C++
-* Arduino IDE
+---
+
+# 🔔 Telegram Notification
+
+![Telegram](Screenshot/notifikasi_telegram.png)
+
+---
+
+# 📟 LCD Display
+
+![LCD](Screenshot/lcd_display.jpg)
+
+---
+
+# 🏗️ Prototype Device
+
+![Prototype](Screenshot/prototype_alat.jpg)
+
+---
+
+# 📈 Monitoring Parameters
+
+| Parameter         | Safe Range  |
+| ----------------- | ----------- |
+| Temperature       | 25°C - 30°C |
+| Humidity          | 40% - 55%   |
+| Gas Concentration | < 600 ppm   |
+
+---
+
+# 🎯 Objectives
+
+* Monitor room environmental conditions in real time.
+* Improve monitoring efficiency using IoT technology.
+* Provide early warning notifications for abnormal conditions.
+* Support safer storage environments through automated monitoring.
+
+---
+
+# 👨‍💻 Author
+
+**Aldo Raditya Pangestu**
+
+Computer Systems Graduate | IoT Developer | Embedded Systems Enthusiast
+
+Technologies:
+
 * ESP8266
-* IoT
+* ESP32
+* Arduino IDE
 * Blynk
 * Telegram Bot
+* C++
+* IoT Systems
 
-## Author
+---
 
-Aldo Raditya Pangestu
-
-Computer Systems Graduate with interests in IoT, Embedded Systems, and Software Development.
+⭐ If you find this project useful, feel free to give it a star.
