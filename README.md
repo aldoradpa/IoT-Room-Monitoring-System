@@ -89,7 +89,7 @@ IoT-Room-Monitoring-System/
 
 # 🔄 Flowchart System
 
-![Flowchart](Diagram/flowchart_sistem.png)
+![Flowchart](Diagram/flowchart.png)
 
 ---
 
@@ -125,7 +125,7 @@ IoT-Room-Monitoring-System/
 
 # 🏗️ Prototype Device
 
-![Prototype](Screenshot/prototype_alat.jpg)
+![Prototype](Screenshot/prototype_alat.png)
 
 ---
 
